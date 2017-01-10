@@ -144,7 +144,7 @@ if(document.getElementById("trial").value.toLowerCase() === document.getElementB
 } else if(document.getElementById("trial").value.toLowerCase() != document.getElementById("images").alt){
     var yab = Math.floor(Math.random() * 6);
     document.getElementById("result").innerHTML = abuse[yab];
-    navigator.vibrate(1000); }
+    navigator.vibrate(400); }
 }
 //lets display the score
 var scores = 0;
