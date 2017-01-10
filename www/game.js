@@ -136,7 +136,6 @@ if(document.getElementById("trial").value.toLowerCase() === document.getElementB
     document.getElementById("numbernames").innerHTML = namesNo;
     splitName();
     //end of new things
-    document.getElementById("research").onclick = "window.open(faces[counter].link,'_blank','location=yes','closebuttoncaption=Return');";
     document.getElementById("images").alt = faces[counter].title;
 	document.getElementById('images').src=faces[counter].src;
     document.getElementById("result").innerHTML = " ";
@@ -176,12 +175,10 @@ function firstImage(){
         window.localStorage.setItem('stages', 1);
         levels = parseInt(window.localStorage.getItem('stages'));
         document.getElementById("level").innerHTML = levels;
-        document.getElementById("research").onclick = "window.open(faces[counter].link,'_blank','location=yes','closebuttoncaption=Return');";
        } else { levels = parseInt(window.localStorage.getItem('stages'));
               document.getElementById("level").innerHTML = levels; }
     document.getElementById('images').src=faces[counter].src;
     document.getElementById("images").alt = faces[counter].title;
-    document.getElementById("research").onclick = "window.open(faces[counter].link,'_blank','location=yes','closebuttoncaption=Return');";
     idea = faces[counter].clue;
     names = faces[counter].title;
     namesNo = names.length;
@@ -218,4 +215,7 @@ function wipeLast(){
     document.getElementById("trial").value = wiper;
 }
 ///
-
+function openLink(){
+    counter = window.localStorage.getItem('key');
+    window.open(faces[counter].link, '_blank', 'location=yes');
+}
