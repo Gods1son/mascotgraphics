@@ -3,89 +3,91 @@ var faces = [{
     src:'images/dangote.jpg',
     title:'dangote',
     hint:'richest man in 9ja',
-    clue:'tdagnygvotlbuer'
+    clue:'tdagnygvotlbuer',
+    link: 'https://en.wikipedia.org/wiki/Aliko_Dangote'
 },{src:'images/donjazzy.jpg',
     title:'don jazzy',
     hint:'mavin records',
-    clue:'dtotnejbazdzsyc'},{src:'images/myoga.jpg',
+    clue:'dtotnejbazdzsyc',
+  link: 'https://en.wikipedia.org/wiki/Don_Jazzy'},{src:'images/myoga.jpg',
     title:'oga at the top',
     hint:'NSCDC.thatsall',
-    clue:'ogabattohestsfp'},{src:'images/2baba.jpg',
+    clue:'ogabattohestsfp', link: 'https://en.wikipedia.org/wiki/My_Oga_at_the_top'},{src:'images/2baba.jpg',
     title:'2baba',
     hint:'african queen',
-    clue:'yu2bhfagdbmnixa'},{src:'images/abacha.jpg',
+    clue:'yu2bhfagdbmnixa', link: 'https://en.wikipedia.org/wiki/2Baba'},{src:'images/abacha.jpg',
     title:'abacha',
     hint:'apple killed him',
-    clue:'arbaurvcdidhgfa'},{src:'images/adeboye.jpg',
+    clue:'arbaurvcdidhgfa', link: 'https://en.wikipedia.org/wiki/Sani_Abacha'},{src:'images/adeboye.jpg',
     title:'pst adeboye',
     hint:'can somebody shout hallelujah',
-    clue:'pxswtrayfebofde'},{src:'images/adefarasin.jpg',
+    clue:'pxswtrayfebofde', link: 'https://en.wikipedia.org/wiki/Enoch_Adeboye'},{src:'images/adefarasin.jpg',
     title:'pst adefarasin',
     hint:'He is a Pastor',
-    clue:'astpdebfasaridn'},{src:'images/awolowo.jpg',
+    clue:'astpdebfasaridn', link: 'https://en.wikipedia.org/wiki/Paul_Adefarasin'},{src:'images/awolowo.jpg',
     title:'awolowo',
     hint:'look at the cap and glasses',
-    clue:'tawgotljovwonki'},{src:'images/banky.jpg',
+    clue:'tawgotljovwonki', link: 'https://en.wikipedia.org/wiki/Obafemi_Awolowo'},{src:'images/banky.jpg',
     title:'banky w',
     hint:'capable man',
-    clue:'abheansdkucywop'},{src:'images/buhari.jpg',
+    clue:'abheansdkucywop', link: 'https://en.wikipedia.org/wiki/Banky_W.'},{src:'images/buhari.jpg',
     title:'buhari',
     hint:'the change',
-    clue:'bxcusvfhjaryrfi'},{src:'images/chimamanda.jpg',
+    clue:'bxcusvfhjaryrfi', link: 'https://en.wikipedia.org/wiki/Muhammadu_Buhari'},{src:'images/chimamanda.jpg',
     title:'chimamanda',
     hint:'a writer',
-    clue:'cshiumadbmanvda'},{src:'images/deolasagoe.jpg',
+    clue:'cshiumadbmanvda', link: 'https://en.wikipedia.org/wiki/Chimamanda_Ngozi_Adichie'},{src:'images/deolasagoe.jpg',
     title:'deola sagoe',
-    hint:'deola',
-    clue:'dexolgasdargoce'},{src:'images/djspinall.jpg',
+    hint:'Deola fashion designer',
+    clue:'dexolgasdargoce', link: 'https://en.wikipedia.org/wiki/Deola_Sagoe'},{src:'images/djspinall.jpg',
     title:'dj spinall',
     hint:'the cap',
-    clue:'drjsapibnamluly'},{src:'images/dokubo.jpg',
+    clue:'drjsapibnamluly', link: 'https://en.wikipedia.org/wiki/DJ_Spinall'},{src:'images/dokubo.jpg',
     title:'asari dokubo',
     hint:'militant',
-    clue:'asbarifdoktuibo'},{src:'images/fela.jpg',
+    clue:'asbarifdoktuibo', link: 'https://en.wikipedia.org/wiki/Mujahid_Dokubo-Asari'},{src:'images/fela.jpg',
     title:'fela',
     hint:'plenty wives + ganja',
-    clue:'fenuyexpoungrla'},{src:'images/goodluck.jpg',
+    clue:'fenuyexpoungrla', link: 'https://en.wikipedia.org/wiki/Fela_Kuti'},{src:'images/goodluck.jpg',
     title:'goodluck',
     hint:'ex president',
-    clue:'gnoordsdlusrfck'},{src:'images/herbert.jpg',
+    clue:'gnoordsdlusrfck', link: 'https://en.wikipedia.org/wiki/Goodluck_Jonathan'},{src:'images/herbert.jpg',
     title:'macaulay',
     hint:'10 naira note',
-    clue:'mawvcfarsulfuey'},{src:'images/honpatrick.jpg',
+    clue:'mawvcfarsulfuey', link: 'https://en.wikipedia.org/wiki/Herbert_Macaulay'},{src:'images/honpatrick.jpg',
     title:'hon patrick',
     hint:'la honourable grammarly',
-    clue:'hoenpvadtrmiuck'},{src:'images/jagaban.jpg',
+    clue:'hoenpvadtrmiuck', link: 'http://infonubia.com/2013/09/hon-patrick-obahiagbons-interview-on.html'},{src:'images/jagaban.jpg',
     title:'jagaban',
     hint:'Tinubu nickname',
-    clue:'jtagradkbadtrun'},{src:'images/kanu.jpg',
+    clue:'jtagradkbadtrun', link: 'https://en.wikipedia.org/wiki/Bola_Tinubu'},{src:'images/kanu.jpg',
     title:'kanu',
     hint:'olympics 98 hero',
-    clue:'kyritadenywvhou'},{src:'images/lagbaja.jpg',
+    clue:'kyritadenywvhou', link: 'https://en.wikipedia.org/wiki/Nwankwo_Kanu'},{src:'images/lagbaja.jpg',
     title:'lagbaja',
     hint:'konko below',
-    clue:'layvgbiajhdavbr'},{src:'images/obasanjo.jpg',
+    clue:'layvgbiajhdavbr', link: 'https://en.wikipedia.org/wiki/Lagbaja'},{src:'images/obasanjo.jpg',
     title:'obasanjo',
     hint:'baba iyabo',
-    clue:'oybrasfyauvnjor'},{src:'images/okonjo.jpg',
+    clue:'oybrasfyauvnjor', link: 'https://en.wikipedia.org/wiki/Olusegun_Obasanjo'},{src:'images/okonjo.jpg',
     title:'okonjo',
     hint:'finance',
-    clue:'oekcdgtofyvnjuo'},{src:'images/oritsejafor.jpg',
+    clue:'oekcdgtofyvnjuo', link:'https://en.wikipedia.org/wiki/Ngozi_Okonjo-Iweala'},{src:'images/oritsejafor.jpg',
     title:'oritsejafor',
     hint:'CAN',
-    clue:'oruitgsejdayfor'},{src:'images/psquare.jpg',
+    clue:'oruitgsejdayfor', link: 'https://en.wikipedia.org/wiki/Ayo_Oritsejafor'},{src:'images/psquare.jpg',
     title:'psquare',
     hint:'Senorita',
-    clue:'pyusqdqrutgarve'},{src:'images/toolz.jpg',
+    clue:'pyusqdqrutgarve', link: 'https://en.wikipedia.org/wiki/P-Square'},{src:'images/toolz.jpg',
     title:'toolz',
     hint:'NdaniTV',
-    clue:'teovsntuiobflzs'},{src:'images/wizkid.jpg',
+    clue:'teovsntuiobflzs', link: 'https://en.wikipedia.org/wiki/Toolz'},{src:'images/wizkid.jpg',
     title:'wizkid',
     hint:'One dance ft drake',
-    clue:'awsridzyekfbind'},{src:'images/wole.jpg',
+    clue:'awsridzyekfbind', link: 'https://en.wikipedia.org/wiki/Wizkid_(musician)'},{src:'images/wole.jpg',
     title:'soyinka',
     hint:'nobel laurel',
-    clue:'scrqotysijdnkda'}];
+    clue:'scrqotysijdnkda', link: 'https://en.wikipedia.org/wiki/Wole_Soyinka'}];
 //used to display objects in the faces when u get the pics right
 var counter = 0;
 //variables used in the game
@@ -134,6 +136,7 @@ if(document.getElementById("trial").value.toLowerCase() === document.getElementB
     document.getElementById("numbernames").innerHTML = namesNo;
     splitName();
     //end of new things
+    document.getElementById("research").onclick = "window.open(faces[counter].link,'_blank','location=yes','closebuttoncaption=Return');";
     document.getElementById("images").alt = faces[counter].title;
 	document.getElementById('images').src=faces[counter].src;
     document.getElementById("result").innerHTML = " ";
@@ -173,10 +176,12 @@ function firstImage(){
         window.localStorage.setItem('stages', 1);
         levels = parseInt(window.localStorage.getItem('stages'));
         document.getElementById("level").innerHTML = levels;
+        document.getElementById("research").onclick = "window.open(faces[counter].link,'_blank','location=yes','closebuttoncaption=Return');";
        } else { levels = parseInt(window.localStorage.getItem('stages'));
               document.getElementById("level").innerHTML = levels; }
     document.getElementById('images').src=faces[counter].src;
     document.getElementById("images").alt = faces[counter].title;
+    document.getElementById("research").onclick = "window.open(faces[counter].link,'_blank','location=yes','closebuttoncaption=Return');";
     idea = faces[counter].clue;
     names = faces[counter].title;
     namesNo = names.length;
@@ -212,5 +217,5 @@ function wipeLast(){
     wiper = word.substr(0, word.length - 1)
     document.getElementById("trial").value = wiper;
 }
-
+///
 
