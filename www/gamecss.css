@@ -12,7 +12,8 @@ header  {
 /* the 9ja header style*/
 #tophead  {
     text-align: right;
-    margin-right: 20px;
+    margin-right: 5px;
+    font-size: 1.4em;
 }
 #ish {
     margin-left: 5px;
