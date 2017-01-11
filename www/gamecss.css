@@ -1,3 +1,136 @@
+* {padding:0;
+margin:0;}
+header  {
+    color:white;
+   /* text-align: center;
+    line-height: 10px;*/
+    background-color: green;
+    width:100%;
+    margin: 0 auto;
+}
+
+/* the 9ja header style*/
+#tophead  {
+    text-align: right;
+    margin-right: 20px;
+}
+#ish {
+    margin-left: 5px;
+}
+/*style for the level and score*/
+.label  {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.result  {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* design for the body*/
+body {
+    width:100%;
+    margin:0 auto;
+    background-color: beige;
+}
+
+/*Know more button*/
+#research {
+    background-color: white;
+    color:forestgreen;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px #888888;
+    margin :5px 0 5px 41px;
+}
+#clue {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:firebrick;
+}
+#images {
+    border: 2px groove green;
+    border-radius: 25px;
+    box-shadow: 10px 7px 8px #888888;
+    margin-left:50px;
+    width:70%;
+}
+/*text input design*/
+#trial {
+   border: 2px ridge green;
+    background-color: black;
+    font-size: 1.2em;
+    color:lawngreen;
+    margin-left:51px;
+    font-weight: bolder;
+    width:70%;
+}
+/*buttons*/
+.entry {
+    width:40px;
+    margin-right: 15px;
+    background-color: darkgreen;
+    color:white;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.master {
+    width:80px;
+    margin-right: 15px;
+    background-color: white;
+    color:green;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+ #check, #hinter {
+    width:100px;
+    margin-right: 15px;
+    background-color: white;
+    color:green;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+#options  {
+    margin-left: 52px;
+    line-height: 4px;
+}
+
+.controls  {
+    margin-left: 95px;
+    line-height: 4px;
+}
+.controller  {
+    margin-left: 75px;
+    line-height: 4px;
+}
+#result  {
+    font-size: 1.2em;
+    text-decoration: line-through;
+    color:red;
+    text-transform: uppercase;
+    margin-left: 65px;
+    text-shadow: 1px 1px black;
+}
+#help  {
+    font-size: 1.2em;
+    color: navy;
+    text-transform: uppercase;
+    text-shadow: 1px 1px black;
+}
+
+/*.label {
+    font-size:30px;
+    color:chartreuse;
+    float:right;
+}
+
 #Naija {
     font-size: 2.2em;
 }
@@ -79,12 +212,9 @@ body {
     text-transform: uppercase;
 }
 
-#score, #level {
+/*#score, #level {
     font-size: 40px;
     color:aqua;
 }
-
-.label {
-    font-size:30px;
-    color:chartreuse;
-}
+*/
+*/

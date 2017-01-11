@@ -123,7 +123,7 @@ if(document.getElementById("trial").value.toLowerCase() === document.getElementB
     document.getElementById("score").innerHTML = scores;
     document.getElementById("level").innerHTML = levels;
     document.getElementById("trial").value = '';
-    //document.getElementById("trial").maxLength = (namesNo + 1);
+    //document.getElementById("trial").maxLength = namesNo;
     document.getElementById("trial").focus();
     //new things
     var nice = Math.floor(Math.random() * 6);
@@ -144,7 +144,7 @@ if(document.getElementById("trial").value.toLowerCase() === document.getElementB
 } else if(document.getElementById("trial").value.toLowerCase() != document.getElementById("images").alt){
     var yab = Math.floor(Math.random() * 6);
     document.getElementById("result").innerHTML = abuse[yab];
-    navigator.vibrate(400); }
+    navigator.vibrate(200); }
 }
 //lets display the score
 var scores = 0;
