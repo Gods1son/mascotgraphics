@@ -16,7 +16,7 @@ header  {
     font-size: 1.4em;
 }
 #ish {
-    margin-left: 5px;
+    padding-left: 20px;
 }
 /*style for the level and score*/
 .label  {
@@ -32,8 +32,11 @@ header  {
 body {
     width:100%;
     margin:0 auto;
-    background-color: beige;
+   // background-color: beige;
+    background-image: -webkit-linear-gradient(65deg, white 0%, darkseagreen 40%, white 60%, darkseagreen 100%);
+    height:100%;
 }
+html {height:100%;}
 
 /*Know more button*/
 #research {
@@ -57,6 +60,7 @@ body {
     box-shadow: 10px 7px 8px #888888;
     margin-left:50px;
     width:70%;
+    height:210px;
 }
 /*text input design*/
 #trial {
@@ -121,101 +125,102 @@ body {
 }
 #help  {
     font-size: 1.2em;
-    color: navy;
+    color: darkgreen;
     text-transform: uppercase;
     text-shadow: 1px 1px black;
 }
 
-/*.label {
-    font-size:30px;
-    color:chartreuse;
-    float:right;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: forestgreen;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-#Naija {
-    font-size: 2.2em;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s
 }
 
-#clue , #numbernames {
-    font-size: 1.5em;
-    font-weight: bolder;
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
 }
-body {
-    background-image: url("images/background3.jpg");
-    color: bisque;
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
     margin-left: 50px;
-    margin-top:20px;
-    line-height: 1px;
-
+    color:azure;
 }
-.entry {
-    margin-right: 15px;
-    background-color: azure;
-    color:indigo;
-    font-size: 1.4em;
-    font-weight: 600;
-    margin-top: -50px;
-    border-radius: 10px;
-}
-.master {
-    margin-right: 15px;
-    background-color: azure;
-    color:indigo;
-    font-size: 1.4em;
-    font-weight: 600;
-    border-radius: 10px;
-}
-
-#images {
-    border: 2px groove navy;
-    border-radius: 25px;
-    box-shadow: 5px 2px 5px #888888;
-    margin-bottom: 20px;
-}
-#options {
-
-}
-
-#trial {
-   border: 2px groove red;
-    background-color: azure;
-    font-size: 1.2em;
-    color:darkblue;
-}
-
-#check {
-  background-color: blanchedalmond;
-    color:brown;
-    margin-top: -10px;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-    margin-right: 85px;
-}
-#hinter {
-  background-color: blanchedalmond;
-    color:brown;
-    margin-top: -10px;
-    margin-bottom: 10px;
-    font-size: 1.2em;
-}
-
-#result {
-    font-size: 1.4em;
-    color:red;
+button.accordion {
+    background-color: #eee;
+    color: #444;
     font-weight: bold;
-    text-transform: uppercase;
-    padding-bottom: 40px;
+    font-size: 1.1em;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
 }
-#help {
-    font-size: 1.4em;
-    color:lawngreen;
-    font-weight: bold;
-    text-transform: uppercase;
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
 }
 
-/*#score, #level {
-    font-size: 40px;
-    color:aqua;
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
 }
-*/
-*/
+
+/* The "show" class is added to the accordion panel when the user clicks on one of the buttons. This will show the panel content */
+div.panel.show {
+    display: block;
+}
+
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel {
+    color:forestgreen;
+    line-height: 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+#menuname {
+    font-size: 0.6em;
+    color:white;
+    text-align: left;
+    font-weight: 500;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
