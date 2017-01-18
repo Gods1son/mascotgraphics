@@ -3,14 +3,14 @@ var faces = [{
     src:'images/dangote.jpg',
     title:'dangote',
     hint:'richest man in 9ja',
-    clue:'tdagnygvotlbuer',
+    clue:'tdagnygvotlbue',
     link: 'https://en.wikipedia.org/wiki/Aliko_Dangote'
 },{src:'images/donjazzy.jpg',
     title:'don jazzy',
     hint:'mavin records',
-    clue:'dtotnejbazdzsyc',
+    clue:'dtotnejbazdzyc',
   link: 'https://en.wikipedia.org/wiki/Don_Jazzy'},{src:'images/myoga.jpg',
-    title:'oga at the top',
+    title:'ogaatthetop',
     hint:'NSCDC.thatsall',
     clue:'ogabattohestsfp', link: 'https://en.wikipedia.org/wiki/My_Oga_at_the_top'},{src:'images/2baba.jpg',
     title:'2baba',
@@ -177,6 +177,8 @@ function firstImage(){
         document.getElementById("level").innerHTML = levels;
        } else { levels = parseInt(window.localStorage.getItem('stages'));
               document.getElementById("level").innerHTML = levels; }
+    //NEW CLICKABLE
+    putclickable();
     document.getElementById('images').src=faces[counter].src;
     document.getElementById("images").alt = faces[counter].title;
     idea = faces[counter].clue;
@@ -185,6 +187,7 @@ function firstImage(){
     document.getElementById("numbernames").innerHTML = namesNo;
   //  document.getElementById("trial").maxLength = namesNo;
     splitName();
+  //  putclickable();
 }
 window.onload = firstImage;
 
@@ -240,4 +243,68 @@ for (i = 0; i < acc.length; i++) {
     }
 }
 }
+var namesplitter = [];
+//code for CLICKABLE BUTTONS
+function putclickable(){
+  //  counter = window.localStorage.getItem('key');
+    var nameforsplit = faces[counter].title;
+    namesplitter = nameforsplit.split("");
+    for (var t = 0; t < namesplitter.length; t++){
+        var btn = document.createElement("BUTTON");
+        var texts = document.createTextNode(namesplitter[t]);
+     //   btn.appendChild(texts);
+        document.body.appendChild(btn);
+        document.getElementById("clickable").appendChild(btn);
+        $('#clickable button').addClass("inputx");
+        //$('#clickable button').attr("onclick", revclick());
+    }
+}
+//jQuery for clickable
+$(document).ready(
+function clicking(){
+$('#options input').click(function(e){
+    e.preventDefault()
+    if($('.inputx:empty:first').text($(this).val()).length)
+        $(this).hide();
+    emptyalert();
+    trykicker();
+        })
+//if($('.inputx.text:not(:empty)')){
+//    alert('all filled');
+//}
 
+
+$('.inputx').click(function(e){
+    e.preventDefault();
+    if($(this).is(':not(:empty)')){
+        var letter = $(this).text()
+        $('#options input:not(:visible)').filter(function(){
+            return this.value == letter;
+        }).first().show();
+        $(this).empty();
+    }
+}).not(':empty').each(function(){
+    var letter = $(this).text()
+    $('#options input:visible').filter(function(){
+        return this.value == letter;
+    }).first().hide();
+})
+})
+//new way to check winner...fantastic
+var kicker;
+function emptyalert(){
+ //  if($('#clickable > .inputx').text.is(':not(:empty)')){
+//    alert('not empty');
+//   }
+        kicker = $('#clickable .inputx').text();
+}
+
+function trykicker(){
+    if(kicker.length == names.length){
+        if(kicker === names){
+            counter++;
+    document.getElementById("images").alt = faces[counter].title;
+	document.getElementById('images').src=faces[counter].src;
+        }else {alert('you missed');}
+    }
+}

@@ -1,16 +1,17 @@
 * {padding:0;
 margin:0;}
 header  {
-    color:white;
+    color:black;
    /* text-align: center;
     line-height: 10px;*/
-    background-color: green;
+    background-color: chocolate;
+    box-shadow: 8px 2px 8px gray;
     width:100%;
     margin: 0 auto;
 }
 #menubar  {
-    font-size: 1.3em;
-    color:white;
+    font-size: 1.1em;
+    color:black;
     text-align: left;
     float:left;
     font-weight: bold;
@@ -21,19 +22,21 @@ header  {
 #tophead  {
     text-align: right;
     margin-right: 5px;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 #ish {
-    padding-left: 100px;
+    padding-left: 60px;
 }
 /*style for the level and score*/
 .label  {
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 700;
+    color: white;
 }
 .result  {
     font-size: 1.5em;
     font-weight: 700;
+    padding-right: 15px;
 }
 
 /* design for the body*/
@@ -41,7 +44,7 @@ body {
     width:100vw;
     margin:0 auto;
    // background-color: beige;
-    background-image: -webkit-linear-gradient(65deg, white 0%, darkseagreen 40%, white 60%, darkseagreen 100%);
+    background-image: url("images/background6.jpg");
     height:100%;
 }
 html {height:100vh;
@@ -66,8 +69,9 @@ width:100vw;}
 #images {
     border: 2px groove green;
     border-radius: 25px;
-    box-shadow: 10px 7px 8px #888888;
-    margin-left:50px;
+    box-shadow: 4px 7px 8px #888888;
+    margin-top: 40px;
+    margin-left:35px;
     width:70%;
     height:210px;
 }
@@ -83,13 +87,14 @@ width:100vw;}
 }
 /*buttons*/
 .entry {
-    width:40px;
-    margin-right: 15px;
-    background-color: darkgreen;
-    color:white;
+    width:34px;
+    margin-right: 5px;
+    background-color: ghostwhite;
+    color:black;
     font-size: 1.2em;
     font-weight: 600;
     border-radius: 10px;
+    text-transform: uppercase;
 }
 .master {
     width:80px;
@@ -101,43 +106,47 @@ width:100vw;}
     border-radius: 10px;
     margin-top: 5px;
 }
- #check, #hinter {
+  #hinter {
     width:100px;
     margin-right: 15px;
-    background-color: white;
-    color:green;
+    background-color: lightcyan;
+    color:darkred;
     font-size: 1.2em;
     font-weight: 600;
     border-radius: 10px;
     margin-top: 5px;
 }
 #options  {
-    margin-left: 52px;
+    margin-left: 25px;
     line-height: 4px;
     width:100vw;
 }
 
-.controls  {
+/*.controls  {
     margin-left: 95px;
     line-height: 4px;
-}
+}*/
+
 .controller  {
-    margin-left: 75px;
+    margin-left: 25px;
     line-height: 4px;
+    line-height: 15px;
+    margin-bottom: 15px;
 }
 #result  {
     font-size: 1.2em;
-    text-decoration: line-through;
-    color:red;
+    color:darkseagreen;
+    font-weight: bold;
     text-transform: uppercase;
     margin-left: 65px;
     text-shadow: 1px 1px black;
 }
 #help  {
     font-size: 1.2em;
-    color: darkgreen;
+    color: white;
     text-transform: uppercase;
     text-shadow: 1px 1px black;
+    font-weight: bolder;
 }
 
 .sidenav {
@@ -147,7 +156,7 @@ width:100vw;}
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: forestgreen;
+    background-color: darkseagreen;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -278,4 +287,74 @@ button.accordion.active:after {
     #options {font-size: 1.7em;margin-left: 16vw;}
     .entry {margin-right: 6vw; margin-top: 1vh; width:8vw;}
     #result, #help {font-size: 2em; font-weight: bold;margin-left: 27vw;}
+}
+
+.inputx {
+    width:20px;
+    margin-right: 5px;
+    height: 27px;
+    background-color: black;
+    color:white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#clickable  {
+    margin-top: 25px;
+    margin-left: 60px;
+    margin-bottom: 35px;
+    margin-right: 60px;
+}
+
+/*modal settings*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 90%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/*#myBtn  {
+		display:none;
+}*/
+
+#heading  {
+		font-size:1.4em;
+
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: darkseagreen;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    width:30%;
+    border: 2px solid black;
+    margin-left:70%;
+    background-color: GoldenRod;
+    padding-left: 5px;
+
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
