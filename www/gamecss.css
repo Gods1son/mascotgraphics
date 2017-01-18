@@ -5,8 +5,8 @@ header  {
    /* text-align: center;
     line-height: 10px;*/
     background-color: chocolate;
-    box-shadow: 8px 2px 8px gray;
-    width:100%;
+    box-shadow: 1px 3px 5px gray;
+    width:100vw;
     margin: 0 auto;
 }
 #menubar  {
@@ -45,7 +45,7 @@ body {
     margin:0 auto;
    // background-color: beige;
     background-image: url("images/background6.jpg");
-    height:100%;
+    height:90vh;
 }
 html {height:100vh;
 width:100vw;}
@@ -96,6 +96,8 @@ width:100vw;}
     border-radius: 10px;
     text-transform: uppercase;
 }
+
+
 .master {
     width:80px;
     margin-right: 15px;
@@ -129,7 +131,6 @@ width:100vw;}
 
 .controller  {
     margin-left: 25px;
-    line-height: 4px;
     line-height: 15px;
     margin-bottom: 15px;
 }
@@ -143,6 +144,7 @@ width:100vw;}
 }
 #help  {
     font-size: 1.2em;
+    line-height: 10px;
     color: white;
     text-transform: uppercase;
     text-shadow: 1px 1px black;
@@ -306,55 +308,6 @@ button.accordion.active:after {
     margin-right: 60px;
 }
 
-/*modal settings*/
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 90%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
 
-/*#myBtn  {
-		display:none;
-}*/
 
-#heading  {
-		font-size:1.4em;
 
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: darkseagreen;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%;
-}
-
-/* The Close Button */
-.close {
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
-    width:30%;
-    border: 2px solid black;
-    margin-left:70%;
-    background-color: GoldenRod;
-    padding-left: 5px;
-
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
