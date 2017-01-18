@@ -29,7 +29,7 @@ var faces = [{
     clue:'tawgoljovwonki', link: 'https://en.wikipedia.org/wiki/Obafemi_Awolowo'},{src:'images/banky.jpg',
     title:'bankyw',
     hint:'capable man',
-    clue:'abheansducywop', link: 'https://en.wikipedia.org/wiki/Banky_W.'},{src:'images/buhari.jpg',
+    clue:'abheanskucywop', link: 'https://en.wikipedia.org/wiki/Banky_W.'},{src:'images/buhari.jpg',
     title:'buhari',
     hint:'the change',
     clue:'bxcusvfharyrfi', link: 'https://en.wikipedia.org/wiki/Muhammadu_Buhari'},{src:'images/chimamanda.jpg',
