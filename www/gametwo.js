@@ -100,6 +100,7 @@ var comment;
 var scores = 0;
 var levels = 1;
 var kicker;
+var stager = 1;
 
 //array that throws jab when u get it wrong
 var abuse = ["where are you from","can i see your passport","shaking my head","beht why",
@@ -170,12 +171,15 @@ function winningFunction(){
     /////
     document.getElementById("score").innerHTML = scores;
     document.getElementById("level").innerHTML = levels;
+    document.getElementById("stage").innerHTML = stager;
 
     //new things
    var nice = Math.floor(Math.random() * 6);
     comment = correctG[nice];
+    document.getElementById("commenter").innerHTML = comment;
+    $('#myBtn').click();
    // alert(comment);
-    navigator.notification.alert(comment, null, "9ja Mascots", "Continue");
+   // navigator.notification.alert(comment, null, "9ja Mascots", "Continue");
     $('.inputx').remove();
     putclickable();
     $('#options input').show();
@@ -215,7 +219,7 @@ function losingfunction(){
 }
 
 
-
+//code for game start
 
 function loading(){
     $('#images').attr("src",faces[counter].src);
@@ -223,13 +227,30 @@ function loading(){
     splitNamesForButtons();
     putclickable();
     clicking();
-}
+    var modal = document.getElementById('myModal');
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+        }
+    }
+
 
 $(document).ready(
     function(){
         loading();
 })
-
+//code for game start
 //jQuery for clickable
 
 function clicking(){
@@ -272,6 +293,7 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 
+
 /* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */
 function openAccord(){
     var acc = document.getElementsByClassName("accordion");
@@ -285,3 +307,4 @@ for (i = 0; i < acc.length; i++) {
 }
 }
 //end of nav bar
+

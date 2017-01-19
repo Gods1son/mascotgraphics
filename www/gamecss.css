@@ -5,7 +5,7 @@ header  {
    /* text-align: center;
     line-height: 10px;*/
     background-color: chocolate;
-    box-shadow: 1px 3px 5px gray;
+    box-shadow: 0px 3px 5px gray;
     width:100vw;
     margin: 0 auto;
 }
@@ -45,10 +45,15 @@ body {
     margin:0 auto;
    // background-color: beige;
     background-image: url("images/background6.jpg");
-    height:90vh;
+    height:100vh;
+    overflow: hidden;
 }
-html {height:100vh;
-width:100vw;}
+
+html {
+    height:100vh;
+    width:100vw;
+    overflow: hidden;
+}
 
 /*Know more button*/
 #research {
@@ -71,7 +76,7 @@ width:100vw;}
     border-radius: 25px;
     box-shadow: 4px 7px 8px #888888;
     margin-top: 40px;
-    margin-left:35px;
+    margin-left:45px;
     width:70%;
     height:210px;
 }
@@ -87,7 +92,7 @@ width:100vw;}
 }
 /*buttons*/
 .entry {
-    width:34px;
+    width:35px;
     margin-right: 5px;
     background-color: ghostwhite;
     color:black;
@@ -119,9 +124,10 @@ width:100vw;}
     margin-top: 5px;
 }
 #options  {
-    margin-left: 25px;
+    margin-left: 35px;
     line-height: 4px;
     width:100vw;
+    padding-left: 5px;
 }
 
 /*.controls  {
@@ -144,7 +150,7 @@ width:100vw;}
 }
 #help  {
     font-size: 1.2em;
-    line-height: 10px;
+    line-height: 25px;
     color: white;
     text-transform: uppercase;
     text-shadow: 1px 1px black;
@@ -292,7 +298,7 @@ button.accordion.active:after {
 }
 
 .inputx {
-    width:20px;
+    width:23px;
     margin-right: 5px;
     height: 27px;
     background-color: black;
@@ -305,7 +311,91 @@ button.accordion.active:after {
     margin-top: 25px;
     margin-left: 60px;
     margin-bottom: 35px;
-    margin-right: 60px;
+    margin-right: 30px;
+}
+
+/* The Modal (background) */
+#commenter  {
+    font-size: 1.4em;
+}
+
+.close  {
+    border: 2px solid white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#myBtn {
+    display: none;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
 }
 
 
