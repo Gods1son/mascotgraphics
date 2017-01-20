@@ -92,7 +92,10 @@ html {
 }
 /*buttons*/
 .entry {
+    outline: none;
+    display: block;
     width:35px;
+    margin: 0 auto;
     margin-right: 5px;
     background-color: ghostwhite;
     color:black;
@@ -102,6 +105,7 @@ html {
     text-transform: uppercase;
     height: auto;
     position: relative;
+    vertical-align: baseline;
 
 }
 
