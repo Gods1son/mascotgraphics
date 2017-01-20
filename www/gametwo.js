@@ -168,6 +168,7 @@ function winningFunction(){
     //saving the counter to phone
   //  window.localStorage.setItem('key', counter);
 //    counter = window.localStorage.getItem('key');
+    linkers();
     /////
     document.getElementById("score").innerHTML = scores;
     document.getElementById("level").innerHTML = levels;
@@ -324,4 +325,13 @@ for (i = 0; i < acc.length; i++) {
 }
 }
 //end of nav bar
-
+function linkers(){
+    var clickers = document.createElement("BUTTON");        // Create a <button> element
+    $('#faceslinks button').addClass("linking");
+    var t = document.createTextNode(faces[(counter - 1)].title);       // Create a text node
+    clickers.appendChild(t);                               // Append the text to <button>
+    clickers.onclick = function(){
+        window.open(faces[(counter -1)].link, '_blank', 'location=yes');
+    };
+    document.getElementById("faceslinks").appendChild(clickers);
+}

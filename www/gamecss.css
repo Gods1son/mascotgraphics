@@ -253,7 +253,7 @@ button.accordion.active:after {
 .panel {
     color:forestgreen;
     line-height: 1.2em;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 500;
 }
 
@@ -411,6 +411,14 @@ button.accordion.active:after {
     color: white;
 }
 
+#faceslinks {
+    display: inline-block;
+    height: 100px;
+    overflow-y: scroll;
+}
 
-
-
+.linking {
+    font-size: 1.1em;
+    color: red;
+    margin-right: 5px;
+}
