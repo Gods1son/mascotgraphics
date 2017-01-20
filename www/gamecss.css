@@ -101,6 +101,7 @@ html {
     border-radius: 10px;
     text-transform: uppercase;
     height: 28px;
+    margin-top: -7px;
 }
 
 #options div {
