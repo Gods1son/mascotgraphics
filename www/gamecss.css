@@ -94,7 +94,7 @@ html {
 .entry {
     display: block;
     width:35px;
-    margin: 0 auto;
+    margin-top: 0;
     margin-right: 5px;
     background-color: ghostwhite;
     color:black;
@@ -118,6 +118,7 @@ html {
     background-color: darkslategray;
     border-radius: 4px;
     text-align: center;
+
 }
 
 .master {
