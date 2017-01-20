@@ -92,7 +92,6 @@ html {
 }
 /*buttons*/
 .entry {
-    outline: none;
     display: block;
     width:35px;
     margin: 0 auto;
