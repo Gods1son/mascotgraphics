@@ -53,7 +53,7 @@ var faces = [{
     clue:'gnoorsdlusrfck', link: 'https://en.wikipedia.org/wiki/Goodluck_Jonathan'},{src:'images/herbert.jpg',
     title:'macaulay',
     hint:'10 naira note',
-    clue:'mawcfarsulfuey', link: 'https://en.wikipedia.org/wiki/Herbert_Macaulay'},{src:'images/honpatrick.jpg',
+    clue:'mawcfarsulfuay', link: 'https://en.wikipedia.org/wiki/Herbert_Macaulay'},{src:'images/honpatrick.jpg',
     title:'honpatrick',
     hint:'la honourable grammarly',
     clue:'hoenpadtrmiuck', link: 'http://infonubia.com/2013/09/hon-patrick-obahiagbons-interview-on.html'},{src:'images/jagaban.jpg',
@@ -103,7 +103,7 @@ var kicker;
 var stager = 1;
 
 //array that throws jab when u get it wrong
-var abuse = ["where are you from","can i see your passport","shaking my head","beht why",
+var abuse = ["where are you from","you don fall my hand","shaking my head","beht why",
             "just try again","u miss am o"];
 //array that informs them that they passed
 var correctG = ["You passed: you smart","You passed: you sabi","You passed: ride on","You passed: i like that",
@@ -172,6 +172,18 @@ function winningFunction(){
     document.getElementById("score").innerHTML = scores;
     document.getElementById("level").innerHTML = levels;
     document.getElementById("stage").innerHTML = stager;
+        //trying to adjust the clickables left margin
+    names = faces[counter].title;
+    if((names.length >= 2) && (names.length <= 5)){
+        document.getElementById("clickable").style.marginLeft = "90px";
+    } else if ((names.length >= 6) && (names.length <= 6.5)){
+        document.getElementById("clickable").style.marginLeft = "70px";
+    } else if ((names.length >= 7) && (names.length <= 8)){
+        document.getElementById("clickable").style.marginLeft = "60px";
+    } else if ((names.length >= 9) && (names.length <= 11)){
+        document.getElementById("clickable").style.marginLeft = "30px";
+    } else {document.getElementById("clickable").style.marginLeft = "15px"; }
+
 
     //new things
    var nice = Math.floor(Math.random() * 6);
@@ -201,6 +213,7 @@ $('.inputx').click(function(e){
         var letter = $(this).text()
         $('#options input:not(:visible)').filter(function(){
             return this.value == letter;
+            //change to show()
         }).first().show();
         $(this).empty();
     }
@@ -208,16 +221,17 @@ $('.inputx').click(function(e){
     var letter = $(this).text()
     $('#options input:visible').filter(function(){
         return this.value == letter;
+        //change to hide()
     }).first().hide();
 })
 }
+
 function losingfunction(){
    var yab = Math.floor(Math.random() * 6);
     document.getElementById("result").innerHTML = abuse[yab];
     navigator.vibrate(200);
 //
 }
-
 
 //code for game start
 
@@ -257,6 +271,7 @@ function clicking(){
 $('#options input').click(function(e){
     e.preventDefault()
     if($('.inputx:empty:first').text($(this).val()).length)
+        //change to .hide()
         $(this).hide();
     emptyalert();
     trykicker();
@@ -268,6 +283,7 @@ $('.inputx').click(function(e){
         var letter = $(this).text()
         $('#options input:not(:visible)').filter(function(){
             return this.value == letter;
+            //change to .show()
         }).first().show();
         $(this).empty();
     }
@@ -275,6 +291,7 @@ $('.inputx').click(function(e){
     var letter = $(this).text()
     $('#options input:visible').filter(function(){
         return this.value == letter;
+        //change to hide()
     }).first().hide();
 })
 }

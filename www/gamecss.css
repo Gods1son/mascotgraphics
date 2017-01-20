@@ -25,7 +25,7 @@ header  {
     font-size: 1.2em;
 }
 #ish {
-    padding-left: 60px;
+    padding-left: 10px;
 }
 /*style for the level and score*/
 .label  {
@@ -100,8 +100,21 @@ html {
     font-weight: 600;
     border-radius: 10px;
     text-transform: uppercase;
+    height: 28px;
 }
 
+#options div {
+    width: 35px;
+    display: inline-block;
+    height: 28px;
+    border: 1px groove transparent;
+    margin-right: 3px;
+    overflow: hidden;
+    background-color: darkslategray;
+    border-radius: 4px;
+
+
+}
 
 .master {
     width:80px;
@@ -124,7 +137,7 @@ html {
     margin-top: 5px;
 }
 #options  {
-    margin-left: 35px;
+    margin-left: 33px;
     line-height: 4px;
     width:100vw;
     padding-left: 5px;
@@ -306,11 +319,12 @@ button.accordion.active:after {
     font-size: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
+    overflow: hidden;
 }
 #clickable  {
     margin-top: 25px;
     margin-left: 60px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     margin-right: 30px;
 }
 
@@ -371,18 +385,13 @@ button.accordion.active:after {
 
 /* The Close Button */
 .close {
-    color: white;
+    color: green;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    background-color: white;
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 .modal-header {
     padding: 2px 16px;
