@@ -100,14 +100,13 @@ html {
     font-weight: 600;
     border-radius: 10px;
     text-transform: uppercase;
-    height: 28px;
-    margin-top: -7px;
+    height: auto;
 }
 
 #options div {
     width: 35px;
     display: inline-block;
-    height: 28px;
+    height: 24px;
     border: 1px groove transparent;
     margin-right: 3px;
     overflow: hidden;
