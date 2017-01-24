@@ -101,7 +101,8 @@ var scores = 0;
 var levels = 1;
 var kicker;
 var stager = 1;
-
+//track is used to track stages
+var track = 5;
 //array that throws jab when u get it wrong
 var abuse = ["where are you from","you don fall my hand","shaking my head","beht why",
             "just try again","u miss am o"];
@@ -143,7 +144,7 @@ function emptyalert(){
         kicker = $('#clickable .inputx').text();
 }
 
-//checks winning if button is fully filled
+//checks winning if button is fully filled...main game controller
 function trykicker(){
     names = faces[counter].title;
     if(kicker.length == names.length){
@@ -158,6 +159,7 @@ function trykicker(){
 function winningFunction(){
     counter++;
     scores += 10;
+    //testing stages
     levels += 1;
     //saving the scores to the phone
    // window.localStorage.setItem('points', scores);
@@ -172,7 +174,7 @@ function winningFunction(){
     /////
     document.getElementById("score").innerHTML = scores;
     document.getElementById("level").innerHTML = levels;
-    document.getElementById("stage").innerHTML = stager;
+    //document.getElementById("stage").innerHTML = stager;
         //trying to adjust the clickables left margin
     names = faces[counter].title;
     if((names.length >= 2) && (names.length <= 5)){
@@ -191,6 +193,7 @@ function winningFunction(){
     comment = correctG[nice];
     document.getElementById("commenter").innerHTML = comment;
     $('#myBtn').click();
+    addStage();
    // alert(comment);
    // navigator.notification.alert(comment, null, "9ja Mascots", "Continue");
     $('.inputx').remove();
@@ -335,3 +338,19 @@ function linkers(){
     };
     document.getElementById("faceslinks").appendChild(clickers);
 }
+
+//trying stager...now working
+function addStage(){
+    switch(levels){
+        case track:
+            stager++;
+            track += 5;
+            navigator.notification.alert("Welcome to stage " + stager, null, "9ja Mascots", "Continue");
+          //  alert("Welcome to stage " + stager);
+            document.getElementById("stage").innerHTML = stager;
+            break;
+        default:
+            document.getElementById("stage").innerHTML = stager;
+    }
+}
+
