@@ -337,12 +337,13 @@ function linkers(){
     clickers.onclick = function(){
         window.open(faces[(counter -1)].link, '_blank', 'location=yes');
     };*/
+
 // create the element
     var newLink = document.createElement("a");
     // add the URL attribute
-    newLink.setAttribute("href",faces[(counter -1)].link);
-    newLink.setAttribute("target", "_window.open");
-  //  newLink.setAttribute("onClick", openman())
+    newLink.setAttribute("href", faces[(counter -1)].link);
+    newLink.setAttribute("target", "_window");
+    newLink.setAttribute("location", "yes");
     // Add some text
     newText = document.createTextNode(faces[(counter - 1)].title);
     // Add it to the new hyperlink
