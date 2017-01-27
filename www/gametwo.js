@@ -110,11 +110,6 @@ var abuse = ["where are you from","you don fall my hand","shaking my head","beht
 var correctG = ["You passed: you smart","You passed: you sabi","You passed: ride on","You passed: i like that",
             "You passed: keep it up","You passed: thumbs up"];
 
-//splash screen
-navigator.splashscreen.show();
-window.setTimeout(function () {
-    navigator.splashscreen.hide();
-}, splashDuration - fadeDuration);
 //putting the clickable buttons below pix
 function putclickable(){
 
