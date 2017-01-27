@@ -422,10 +422,7 @@ button.accordion.active:after {
 #faceslinks {
     line-height: 1em;
     height: 100px;
-    width: 200px;
-    overflow-x: scroll;
-    overflow-y: scroll;
-
+    overflow: scroll;
 }
 
 #instruct {

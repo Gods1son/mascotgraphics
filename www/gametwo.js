@@ -340,14 +340,16 @@ function linkers(){
 // create the element
     var newLink = document.createElement("a");
     // add the URL attribute
-    newLink.setAttribute("href", faces[(counter -1)].link);
-    newLink.setAttribute("target", "_blank");
+    newLink.setAttribute("href",faces[(counter -1)].link);
+    newLink.setAttribute("target", "_window.open");
+  //  newLink.setAttribute("onClick", openman())
     // Add some text
     newText = document.createTextNode(faces[(counter - 1)].title);
     // Add it to the new hyperlink
     newLink.appendChild(newText);
     // Find the place to put it
-    document.getElementById("faceslinks").appendChild(newLink);
+    document.getElementById("faceslinkss").appendChild(newLink);
+
 }
 
 //trying stager...now working
