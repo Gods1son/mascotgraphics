@@ -39,7 +39,8 @@ header  {
     font-weight: 700;
     padding-left: 5px;
     padding-right: 8px;
-    border:1px solid red;
+    border:4px outset red;
+    border-radius: 20px;
     background-color: bisque;
     text-align: center;
 }
@@ -419,11 +420,22 @@ button.accordion.active:after {
 }
 
 #faceslinks {
-    display: inline-block;
+    line-height: 1em;
     height: 100px;
+    width: 200px;
+    overflow-x: scroll;
     overflow-y: scroll;
+
 }
 
-.linking {
-    margin-right: 5px;
+#instruct {
+    height: 150px;
+    overflow: scroll;
+}
+
+#faceslinks a{
+    font-size: 1em;
+    color:red;
+    display: inline;
+    margin-left: -30px;
 }

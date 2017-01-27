@@ -110,6 +110,11 @@ var abuse = ["where are you from","you don fall my hand","shaking my head","beht
 var correctG = ["You passed: you smart","You passed: you sabi","You passed: ride on","You passed: i like that",
             "You passed: keep it up","You passed: thumbs up"];
 
+//splash screen
+navigator.splashscreen.show();
+window.setTimeout(function () {
+    navigator.splashscreen.hide();
+}, splashDuration - fadeDuration);
 //putting the clickable buttons below pix
 function putclickable(){
 
@@ -329,14 +334,25 @@ for (i = 0; i < acc.length; i++) {
 }
 //end of nav bar
 function linkers(){
-    var clickers = document.createElement("BUTTON");        // Create a <button> element
+   /* var clickers = document.createElement("BUTTON");        // Create a <button> element
     $('#faceslinks button').addClass("linking");
     var t = document.createTextNode(faces[(counter - 1)].title);       // Create a text node
     clickers.appendChild(t);                               // Append the text to <button>
+    document.getElementById("faceslinks").appendChild(clickers);
     clickers.onclick = function(){
         window.open(faces[(counter -1)].link, '_blank', 'location=yes');
-    };
-    document.getElementById("faceslinks").appendChild(clickers);
+    };*/
+// create the element
+    var newLink = document.createElement("a");
+    // add the URL attribute
+    newLink.setAttribute("href", faces[(counter -1)].link);
+    newLink.setAttribute("target", "_blank");
+    // Add some text
+    newText = document.createTextNode(faces[(counter - 1)].title);
+    // Add it to the new hyperlink
+    newLink.appendChild(newText);
+    // Find the place to put it
+    document.getElementById("faceslinks").appendChild(newLink);
 }
 
 //trying stager...now working
