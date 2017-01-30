@@ -342,22 +342,25 @@ function linkers(){
     var newLink = document.createElement("a");
     // add the URL attribute
     newLink.setAttribute("href", faces[(counter -1)].link);
-    newLink.setAttribute("target", "_window");
-    newLink.setAttribute("location", "yes");
+  //  newLink.setAttribute("target", "_window");
+  //  newLink.setAttribute("location", "yes");
     // Add some text
     newText = document.createTextNode(faces[(counter - 1)].title);
     // Add it to the new hyperlink
     newLink.appendChild(newText);
     // Find the place to put it
-  //  document.getElementById("faceslinkss").appendChild(newLink);
-    var clickers = document.createElement("BUTTON");
+   // document.getElementById("faceslinkss").appendChild(newLink);
+  /*$("faceslinkss a").on("click", {url: lastLink}, function(url){
+       window.open(url);
+  })*/
+    clickers = document.createElement("BUTTON");
     var t = document.createTextNode(faces[(counter - 1)].title);       // Create a text node
     clickers.appendChild(t);
     document.getElementById("faceslinkss").appendChild(clickers);
     var lastLink = faces[(counter -1)].link;
     clickers.onclick = function(){
-        newLink.click(newLink.setAttribute("href", window.open(lastLink, '_blank', 'location=yes')));
-       // setAttribute("href", window.open(newLink.href));
+      //  newLink.click(newLink.setAttribute("href", window.open(lastLink, '_blank', 'location=yes')));
+        window.open(lastLink, '_blank', 'location=yes')
     }
 }
 

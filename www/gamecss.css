@@ -424,7 +424,10 @@ button.accordion.active:after {
     height: 100px;
     overflow: scroll;
 }
-
+#faceslinkss a{
+    font-size: 0.9em;
+    color:red;
+}
 #instruct {
     height: 150px;
     overflow: scroll;
