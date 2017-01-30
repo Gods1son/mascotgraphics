@@ -21,6 +21,13 @@
 
      <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span id="menuname">Made in 9ja</span> &times;</a>
+    <button class="accordion" onclick="openAccord()">Settings</button>
+<div class="panel">
+<div>
+	<input type="checkbox" id="switch1" name="switch1" class="switch" onchange="sounding()" checked />
+	<label for="switch1"><b>Sound</b></label>
+</div>
+</div>
   <button class="accordion" onclick="openAccord()">Instruction</button>
             <div class="panel" id="instruct">
   <p>Do you know the person in the picture. Type the name with the buttons at the bottom of the screen. click on the button in the middle if u make a mistake to take the letter off. If you get hooked, use the help! button to find clue, u will find links to know more about celebs on the left menu bar.</p>
@@ -90,7 +97,6 @@
 <p><button onclick="helperMan()" id="hinter">Help!</button> <span id="help"></span></p>
 </div>
 <span id="result"></span><br>
-
-
+<audio autoplay="autoplay" loop="loop" src="Emeka.mp3" id="music"></audio>
 </body>
 </html>

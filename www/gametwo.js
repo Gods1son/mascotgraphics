@@ -349,8 +349,16 @@ function linkers(){
     // Add it to the new hyperlink
     newLink.appendChild(newText);
     // Find the place to put it
-    document.getElementById("faceslinkss").appendChild(newLink);
-
+  //  document.getElementById("faceslinkss").appendChild(newLink);
+    var clickers = document.createElement("BUTTON");
+    var t = document.createTextNode(faces[(counter - 1)].title);       // Create a text node
+    clickers.appendChild(t);
+    document.getElementById("faceslinkss").appendChild(clickers);
+    var lastLink = faces[(counter -1)].link;
+    clickers.onclick = function(){
+        newLink.click(newLink.setAttribute("href", window.open(lastLink, '_blank', 'location=yes')));
+       // setAttribute("href", window.open(newLink.href));
+    }
 }
 
 //trying stager...now working
@@ -365,6 +373,17 @@ function addStage(){
             break;
         default:
             document.getElementById("stage").innerHTML = stager;
+    }
+}
+
+//trying sound
+function sounding(){
+    var audio = document.getElementById('music');
+    var soundman = document.getElementById('switch1');
+    if (soundman.checked) {
+        audio.play();
+    }else{
+        audio.pause();
     }
 }
 
