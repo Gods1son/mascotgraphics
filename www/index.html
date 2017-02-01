@@ -85,11 +85,11 @@
 <!--<input type="button" id="research" value="Click to know more about him/her" onclick="openLink()">-->
 <div id="imgholder"><img id="images">
     <div id="sociallinks">
-        <img src="images/facebook2.png" width="90%" onclick="share('f', 'My Level on Naija Mascot is 4', '', 'https://Naijamascots.com')"><br>
-        <img src="images/WhatsApp2.png" width="90%" onclick="share('w', 'My Level on Naija Mascot is 4', '', 'https://Naijamascots.com')"><br>
-        <img src="images/Twitter.png" width="90%" onclick="share('t', 'My Level on Naija Mascot is 4', '', 'https://Naijamascots.com')"><br>
+        <img src="images/facebook2.png" width="90%" onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook')"><br>
+        <img src="images/WhatsApp2.png" width="90%" onclick="window.plugins.socialsharing.shareViaWhatsApp('Message via WhatsApp')"><br>
+        <img src="images/Twitter.png" width="90%" onclick="window.plugins.socialsharing.shareViaTwitter('Message via Twitter')"><br>
         <img src="images/Instagram.png" width="90%"><br>
-        <img src="images/sms.png" width="90%" onclick="share('sms', 'My Level on Naija Mascot is 4', '', 'https://Naijamascots.com')">
+        <img src="images/sms.png" width="90%" onclick="window.plugins.socialsharing.shareViaSMS('Message via SMS')">
     </div>
     </div><br>
     <!--TRYING THE CLICKABLE BUTTONS-->

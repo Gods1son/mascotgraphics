@@ -37,4 +37,5 @@
     <preference name="loglevel" value="DEBUG" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
+    <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
 </widget>

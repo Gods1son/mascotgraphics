@@ -389,18 +389,4 @@ function sounding(){
         audio.pause();
     }
 }
-//trying social links
-function share(t, msg, image, link){
-    if(t=='w'){
-        window.plugins.socialsharing.shareViaWhatsApp(msg, '', link);
-    } else if(t=='f'){
-        window.plugins.socialsharing.shareViaFacebook(msg, image, link);
-    } else if(t=='t'){
-        window.plugins.socialsharing.shareViaTwitter(msg, image, link);
-    } else if(t=='sms'){
-        window.plugins.socialsharing.shareViaSMS(msg + ''+ image + '' + link);
-    }   else {
-        var sub = 'Naija Mascot Game'
-        window.plugins.socialsharing.shareViaEmail(msg, sub, '');
-    }
-}
+
