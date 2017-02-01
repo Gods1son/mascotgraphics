@@ -97,14 +97,20 @@ html {
 }
 #imgholder {
     width: 95vw;
-    margin-left: 7vw;
+    margin-left: 5vw;
     margin-top: 15px;
+    margin-bottom: 20px;
+    height: 38vh;
+    clear: both;
 }
 #images {
     border: 2px groove green;
     border-radius: 10px;
-    width:85vw;
+    width:91vw;
     height:42vh;
+    float: left;
+    margin-right: -80px;
+    clear: right;
 }
 /*text input design*/
 #trial {
@@ -354,6 +360,7 @@ button.accordion.active:after {
     overflow: hidden;
 }
 #clickable  {
+    clear:both;
     margin-top: 5px;
     margin-left: 60px;
     margin-bottom: 20px;
@@ -511,4 +518,13 @@ input.switch:checked ~ label:before
 input.switch:checked ~ label:after
 {
 	margin-left: 2em;
+}
+#sociallinks {
+    clear: right;
+    float: right;
+    width:8vw;
+    padding-top: 40px;
+    padding-right: 15px;
+    z-index: 1;
+    position: relative;
 }
