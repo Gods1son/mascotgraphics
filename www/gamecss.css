@@ -4,17 +4,24 @@ header  {
     color:black;
    /* text-align: center;
     line-height: 10px;*/
-    background-color: chocolate;
+    background-color: darkslategray;
+    height:9vh;
     box-shadow: 0px 3px 5px gray;
     width:100vw;
     margin: 0 auto;
 }
 #menubar  {
     font-size: 1.1em;
-    color:black;
+    color:bisque;
     text-align: left;
     float:left;
     font-weight: bold;
+    margin-right: 57vw;
+}
+#rightscore {
+    /*float:right;*/
+    padding-top: 4px;
+    margin-right: 5px;
 }
 /*style="font-size:20px;cursor:pointer;color:white;text-align:left;float:left;font-weight:bold;"*/
 
@@ -23,9 +30,10 @@ header  {
     text-align: right;
     margin-right: 5px;
     font-size: 1.2em;
+    color:bisque;
 }
 #ish {
-    padding-left: 10px;
+    padding-left: 22vw;
     clear:both;
 }
 /*style for the level and score*/
@@ -35,13 +43,23 @@ header  {
     color: white;
 }
 .result  {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 700;
     padding-left: 5px;
     padding-right: 8px;
-    border:4px outset red;
+    border:3px outset red;
     border-radius: 20px;
     background-color: bisque;
+    text-align: center;
+}
+.result1  {
+    font-size: 1em;
+    font-weight: 400;
+    padding-left: 2px;
+    /*border:2px outset red;
+    border-radius: 10px;
+    background-color: bisque;*/
+    color:lightgoldenrodyellow;
     text-align: center;
 }
 
@@ -49,8 +67,8 @@ header  {
 body {
     width:100vw;
     margin:0 auto;
-   // background-color: beige;
-    background-image: url("images/background6.jpg");
+   background-color: beige;
+
     height:100vh;
     overflow: hidden;
 }
@@ -79,14 +97,13 @@ html {
 }
 #imgholder {
     width: 95vw;
-    margin-left: 7px;
+    margin-left: 7vw;
     margin-top: 15px;
 }
 #images {
     border: 2px groove green;
-    border-radius: 25px;
-    box-shadow: 4px 7px 8px #888888;
-    width:93vw;
+    border-radius: 10px;
+    width:85vw;
     height:42vh;
 }
 /*text input design*/
@@ -101,11 +118,12 @@ html {
 }
 /*buttons*/
 .entry {
+    font-size: 1.3em;
     display: block;
-    width:39px;
+    width:13vw;
     margin-right: 5px;
-    background-color: ghostwhite;
-    color:black;
+    background-color: forestgreen;
+    color:white;
     font-weight: 700;
     border-radius: 3px;
     text-transform: uppercase;
@@ -116,7 +134,7 @@ html {
 }
 
 #options div {
-    width: 39px;
+    width: 12.5vw;
     display: inline-block;
     height: 33px;
     border: 1px groove transparent;
@@ -166,18 +184,18 @@ html {
 }
 #result  {
     font-size: 1.2em;
-    color:darkseagreen;
+    color:forestgreen;
     font-weight: bold;
     text-transform: uppercase;
     margin-left: 65px;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px white;
 }
 #help  {
     font-size: 1.2em;
     line-height: 25px;
-    color: white;
+    color: darkgreen;
     text-transform: uppercase;
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px green;
     font-weight: bolder;
 }
 
@@ -279,6 +297,7 @@ button.accordion.active:after {
 @media screen and (max-width: 320px) {
     #research {margin-left: 55px;}
     .entry {font-size: 1.05em;}
+    #options div {width: 12vw}
 }
 
 @media screen and (min-height: 570px) and (max-height: 640px) {
@@ -287,20 +306,21 @@ button.accordion.active:after {
     }
     #options div {width:12.5vw; height:5.5vh}
       #research {margin-left: 65px;}
-    #help, #result {font-size: 1.5em;}
+    #help, #result {font-size: 1.3em;}
     #clue {font-size: 1.4em;}
     .inputx {height:40px}
 }
 
 @media screen and (min-height: 720px) and (max-height: 890px) {
   #images {height: 40vh;}
-      .entry {font-size: 1.3em;
+      .entry {font-size: 1.3em; width: 13vw;
     }
+     #options div {width:12.5vw; height:5.5vh}
       #research {margin-left: 65px;}
     header {height: 7vh;padding-top: 10px;}
     .controls {font-size: 1.3em;}
     .controller {font-size: 1.3em;}
-    #help, #result {font-size: 1.5em;}
+    #help, #result {font-size: 1.2em;}
     #clue {font-size: 1.6em;}
     #hinter {width:35vw;}
 }
@@ -326,8 +346,8 @@ button.accordion.active:after {
     width:23px;
     margin-right: 5px;
     height: 35px;
-    background-color: black;
-    color:white;
+    background-color: white;
+    color:black;
     font-size: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
