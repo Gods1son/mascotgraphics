@@ -37,5 +37,5 @@
     <preference name="loglevel" value="DEBUG" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
-    <gap:plugin name="nl.x-services.plugins.socialsharing"/>
+    <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
 </widget>
