@@ -76,5 +76,5 @@
     <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
     <preference name="orientation" value="portrait"/>
     <preference name="permissions" value="none"/>
-    <gap:plugin name="com.dawsonloudon.videoplayer" version="1.0.0" />
+    <gap:plugin name="com.dawsonloudon.videoplayer"/>
 </widget>
