@@ -385,7 +385,7 @@ button.accordion.active:after {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -519,6 +519,7 @@ input.switch:checked ~ label:after
 {
 	margin-left: 2em;
 }
+/*the div that holds the social links*/
 #sociallinks {
     clear: right;
     float: right;
@@ -528,3 +529,4 @@ input.switch:checked ~ label:after
     z-index: 1;
     position: relative;
 }
+

@@ -389,4 +389,17 @@ function sounding(){
         audio.pause();
     }
 }
-
+//dark theme
+function darktheme(){
+    var darker = document.getElementById('darktheme');
+    if(darker.checked){
+        document.body.style.backgroundImage = "url('images/background6.jpg')";
+        document.getElementById('help').style.color = "white";
+        document.getElementById('result').style.color = "white";
+        document.getElementById('result').style.textShadow = "none";
+    }  else {document.body.style.backgroundImage = "none";
+        document.getElementById('help').style.color = "darkgreen";
+        document.getElementById('result').style.color = "forestgreen";
+        document.getElementById('result').style.textShadow = "1px 1px white";
+        }
+}
