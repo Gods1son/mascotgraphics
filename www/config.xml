@@ -25,4 +25,5 @@
     <splash platform="android" qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
     <splash src="splash.png" />
     <preference name="SplashScreenDelay" value="none" />
+    <gap:plugin name="com.dawsonloudon.videoplayer" version="1.0.0" />
 </widget>
