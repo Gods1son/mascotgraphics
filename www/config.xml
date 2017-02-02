@@ -24,6 +24,5 @@
     <splash platform="android" qualifier="port-mdpi" src="res/screen/android/screen-mdpi-portrait.png" />
     <splash platform="android" qualifier="port-hdpi" src="res/screen/android/screen-hdpi-portrait.png" />
     <splash src="splash.png" />
-    <preference name="SplashScreenDelay" value="none" />
-    <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="SplashScreenDelay" value="3000" />
 </widget>

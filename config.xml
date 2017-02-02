@@ -35,7 +35,7 @@
     <icon height="48" platform="ios" src="www/images/android-icon-48x48.jpg" width="48"/>
     <icon height="48" platform="windows" src="www/images/android-icon-48x48.jpg" width="48"/>
     <preference name = "SplashScreen" value = "screen" />
-    <preference name = "SplashScreenDelay" value = "none" />
+    <preference name = "SplashScreenDelay" value = "3000" />
     <splash platform="android" qualifier="port-ldpi" src="www/res/screen/android/screen-ldpi-portrait.png" />
     <splash platform="android" qualifier="port-mdpi" src="www/res/screen/android/screen-mdpi-portrait.png" />
     <splash platform="android" qualifier="port-hdpi" src="www/res/screen/android/screen-hdpi-portrait.png" />
@@ -76,5 +76,4 @@
     <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
     <preference name="orientation" value="portrait"/>
     <preference name="permissions" value="none"/>
-    <preference name="AllowInlineMediaPlayback" value="true" />
 </widget>
