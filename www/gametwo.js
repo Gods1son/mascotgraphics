@@ -410,6 +410,6 @@ function darktheme(){
 }
 function closevideo(){
     setTimeout(function(){
-        VideoPlayer.play("https://youtu.be/_xGhK6qgPtM");
+        document.getElementById('videoholder').style.display = "none";
     },14000);
 }
