@@ -529,4 +529,13 @@ input.switch:checked ~ label:after
     z-index: 1;
     position: relative;
 }
-
+#videoholder {
+    width: 100vw;
+    height:100vh;
+    display: block;
+    background-color: forestgreen;
+}
+#videoopen {
+     width: 100vw;
+    height:100vh;
+}

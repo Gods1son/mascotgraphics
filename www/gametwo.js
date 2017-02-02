@@ -263,9 +263,14 @@ function loading(){
         }
     }
 
-
+/*
+this is start of page
+this is start of page
+this is start of page
+*/
 $(document).ready(
     function(){
+        closevideo();
         loading();
 })
 //code for game start
@@ -402,4 +407,9 @@ function darktheme(){
         document.getElementById('result').style.color = "forestgreen";
         document.getElementById('result').style.textShadow = "1px 1px white";
         }
+}
+function closevideo(){
+    setTimeout(function(){
+        document.getElementById('videoholder').style.display = "none"
+    },14000);
 }
