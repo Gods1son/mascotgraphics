@@ -74,4 +74,6 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
+    <preference name="orientation" value="portrait"/>
+    <preference name="permissions" value="none"/>
 </widget>
