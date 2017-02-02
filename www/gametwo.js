@@ -411,5 +411,5 @@ function darktheme(){
 function closevideo(){
     setTimeout(function(){
         document.getElementById('videoholder').style.display = "none";
-    },14000);
+    },4000);
 }
