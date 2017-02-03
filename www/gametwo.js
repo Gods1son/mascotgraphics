@@ -421,7 +421,7 @@ function toury(){
       steps: [
         {
           title: "How to type",
-          content: "Click the green buttons below to type name",
+          content: "Click the green buttons below to type name of celebrity in the image below",
           target: document.getElementById("headmaster"),
           placement: "bottom",
             xOffset: "center",
