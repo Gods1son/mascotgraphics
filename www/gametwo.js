@@ -271,6 +271,7 @@ this is start of page
 $(document).ready(
     function(){
         closevideo();
+        toury();
         loading();
 })
 //code for game start
@@ -412,4 +413,31 @@ function closevideo(){
     setTimeout(function(){
         document.getElementById('videoholder').style.display = "none";
     },10500);
+}
+function toury(){
+      // Define the tour!
+    var tour = {
+      id: "hello-hopscotch",
+      steps: [
+        {
+          title: "How to type",
+          content: "Click the green buttons below to type name",
+          target: document.getElementById("headmaster"),
+          placement: "bottom",
+            xOffset: "center",
+            delay: 11000
+        },
+        {
+          title: "You make a mistake?",
+          content: "Click buttons above to cancel letter",
+          target: document.getElementById("clickable"),
+          placement: "bottom",
+            xOffset: "center",
+            arrowOffset: 120
+        }
+      ]
+    };
+
+    // Start the tour!
+    hopscotch.startTour(tour);
 }
