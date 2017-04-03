@@ -13,52 +13,55 @@
 <link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="hopscotch.css">
 <link rel="stylesheet" href="gamecss.css">
+<link rel="stylesheet" href="materialize.min.css">
 <script type = "text/javascript"  src = "jquery-3.1.1.js"></script>
+<script src="materialize.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 <script src="hopscotch.js"></script>
 <script src ="gametwo.js"></script>
 </head>
 
 <header id="headmaster">
-
-     <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span id="menuname">Made in 9ja</span> &times;</a>
-    <button class="accordion" onclick="openAccord()">Settings</button>
-<div class="panel">
-<div>
-	<input type="checkbox" id="switch1" name="switch1" class="switch" onchange="sounding()" checked />
-	<label for="switch1"><b>Sound</b></label><br><br>
-</div><div>
-	<input type="checkbox" id="darktheme" name="darktheme" onchange="darktheme()" style="zoom:1.2"/>
-	<label for="darktheme"><b>Dark Theme</b></label><br>
-</div>
-</div>
-  <button class="accordion" onclick="openAccord()">Instruction</button>
-            <div class="panel" id="instruct">
-  <p>Do you know the person in the picture. Type the name with the buttons at the bottom of the screen. click on the button in the middle if u make a mistake to take the letter off. If you get hooked, use the help! button to find clue, u will find links to know more about celebs on the left menu bar.</p>
-</div>
- <button class="accordion" onclick="openAccord()">Links about celebs</button>
-<div class="panel">
-  <div id="faceslinks">
-      <p id="faceslinkss"> </p>
-    </div>
-</div>
-<button class="accordion" onclick="openAccord()">Developers</button>
-<div class="panel">
-  <p>Created by Gods1son and Tundetash</p>
-    <p>©2017</p>
-</div>
- <button class="accordion" onclick="openAccord()">Appreciation</button>
-<div class="panel">
-  <p>Enjoy the game and tell your friends about it. Let us rep 9ja</p>
-</div>
-
-</div>
+ <ul id="slide-out" class="side-nav" style="background-color:springgreen;">
+    <li style="padding-left:10px"><h5><b>Made in 9ja</b></h5></li>
+     <li><hr style="background-color:darkred">
+        <div>
+  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header" style="font-size:1.4em">Settings <span style="float:right;font-size:5px;color:darkred"><i>click</i></span></div>
+      <div class="collapsible-body" style="font-size:1.4em;padding-left:5px;">
+            <label for="switch1" style="font-size:1.1em"><b>Sound</b></label>
+          <input type="checkbox" id="switch1" name="switch1" class="switch" style="zoom:1.4;opacity:1;position:relative;left:0"/><br>
+          <label for="darktheme" style="font-size:1.1em"><b>Dark Theme</b></label> <input type="checkbox" id="darktheme" name="darktheme" onchange="darktheme()" style="zoom:1.4;opacity:1;position:relative;left:0"/>
+        </div>
+    </li><hr style="background-color:darkred">
+    <li>
+      <div class="collapsible-header" style="font-size:1.4em">Instruction <span style="float:right;font-size:5px;color:darkred"><i>click</i></span></div>
+      <div class="collapsible-body" style="font-size:1.2em;padding-left:5px;line-height:1.5em;"><span>Do you know the person in the picture. Type the name with the buttons at the bottom of the screen. click on the button in the middle if u make a mistake to take the letter off. If you get hooked, use the help! button to find clue, u will find links to know more about celebs on the left menu bar.</span></div>
+    </li><hr style="background-color:darkred">
+    <li>
+      <div class="collapsible-header" style="font-size:1.4em">Links about celebs <span style="float:right;font-size:5px;color:darkred"><i>click</i></span></div>
+      <div class="collapsible-body" style="font-size:1.4em;padding-left:5px;line-height:1em;"><span><p id="faceslinkss" style="padding:0"> </p></span></div>
+    </li><hr style="background-color:darkred">
+    <li>
+      <div class="collapsible-header" style="font-size:1.4em">Developers <span style="float:right;font-size:5px;color:darkred"><i>click</i></span></div>
+      <div class="collapsible-body" style="font-size:1.4em;padding-left:5px;line-height:1.5em;"><span>Created by Gods1son and Tundetash <br> ©2017</span></div><hr style="background-color:darkred">
+    </li>
+    <li>
+      <div class="collapsible-header" style="font-size:1.4em">Appreciation <span style="float:right;font-size:5px;color:darkred"><i>click</i></span></div>
+      <div class="collapsible-body" style="font-size:1.4em;padding-left:5px;line-height:1.5em;"><span>Enjoy the game and tell your friends about it.</span></div>
+    </li><hr style="background-color:darkred">
+      <li style="padding-left:10px"><h5><b>Let us represent 9ja</b></h5></li>
+  </ul>
+         </div>
+     </li>
+  </ul>
 <!--include video here-->
 <div id="videoholder">
 <img src="loading.gif" id="videoopen">
 </div>
-<span id="menubar" onclick="openNav()">&#9776; Menu</span>
+    <a href="#" data-activates="slide-out" class="button-collapse" id="menubar">&#9776; MENU</a>
+<!--<span id="menubar" onclick="openNav()">&#9776; Menu</span>-->
 <!--<h1 id="tophead">Naija Mascots</h1>--><div id="rightscore"><img src="images/coin.png" width="5%"> <span id="score" class="result1">0</span></div>
 <div id="ish">
      <span class="label">Level:</span> <span id="level" class="result">1</span><span class="label"> Stage:</span> <span id="stage" class="result">1</span></div>
@@ -68,20 +71,20 @@
 <button id="myBtn">Open Modal</button>
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="myModal" class="modal-true">
 
   <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <marquee direction="right"><h2>Naija Mascots</h2></marquee>
+  <div class="modal-content-true">
+    <div class="modal-header-true">
+      <marquee direction="right"><span style="font-size:2em;">Naija Mascots</span></marquee>
     </div>
     <div class="modal-body">
-      <p><h2><span id="commenter"></span></h2></p>
+      <p><span id="commenter" style="font-size:2em;"></span></p>
       <img src="images/mark.gif" width="100%">
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer-true">
       <span class="close">continue</span>
-      <h1>...</h1>
+
 
 
     </div>
@@ -92,7 +95,7 @@
 
 
 <!--<input type="button" id="research" value="Click to know more about him/her" onclick="openLink()">-->
-<div id="imgholder"><img id="images">
+<div id="imgholder"><img id="images" class="materialboxed">
     <div id="sociallinks">
         <img src="images/facebook2.png" width="90%" onclick="window.plugins.socialsharing.shareViaFacebookWithPasteMessageHint('Hello, do you play Naija Masctos, It is a very cool and educative game', null /* img */, null /* url */, 'Please long press on your screen and select paste to share. Thanks',null,null)"><br>
         <img src="images/Whatsappmain.png" width="90%" onclick="window.plugins.socialsharing.shareViaWhatsApp('Hello, do you play Naija Masctos, It is a very cool and educative game')"><br>
@@ -114,6 +117,6 @@
 <p><button onclick="helperMan()" id="hinter">Help!</button> <span id="help"></span></p>
 </div>
 <span id="result"></span><br>
-<audio loop="loop" src="Emeka.mp3" id="music"></audio>
+<audio loop="loop" src="beep50.mp3" id="music"></audio>
 </body>
 </html>

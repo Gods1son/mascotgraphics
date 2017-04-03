@@ -102,7 +102,7 @@ var levels = 1;
 var kicker;
 var stager = 1;
 //track is used to track stages
-var track = 5;
+var track = 50;
 //array that throws jab when u get it wrong
 var abuse = ["where are you from","you don fall my hand","shaking my head","beht why",
             "just try again","u miss am o"];
@@ -128,6 +128,7 @@ function putclickable(){
 }
 //filling option buttons
 function splitNamesForButtons(){
+    //counter = parseInt(window.localStorage.getItem('key'));
     idea = faces[counter].clue;
     namesSplit = idea.split("");
     for (var i = 0;i < namesSplit.length;i++){
@@ -162,14 +163,17 @@ function winningFunction(){
     //testing stages
     levels += 1;
     //saving the scores to the phone
-   // window.localStorage.setItem('points', scores);
-//    scores = parseInt(window.localStorage.getItem('points'));
+    window.localStorage.setItem('points', scores);
+    scores = parseInt(window.localStorage.getItem('points'));
     //saving the stage to the phone
-  //  window.localStorage.setItem('stages', levels);
-//    levels = parseInt(window.localStorage.getItem('stages'));
+    window.localStorage.setItem('stages', levels);
+    levels = parseInt(window.localStorage.getItem('stages'));
     //saving the counter to phone
-  //  window.localStorage.setItem('key', counter);
-//    counter = window.localStorage.getItem('key');
+    window.localStorage.setItem('key', counter);
+    counter = window.localStorage.getItem('key');
+    //saving stages
+     window.localStorage.setItem('stageman', stager);
+    stager = window.localStorage.getItem('stageman');
     linkers();
     /////
     document.getElementById("score").innerHTML = scores;
@@ -240,6 +244,37 @@ function losingfunction(){
 //code for game start
 
 function loading(){
+    //start saving play on phone
+    //saving counter
+    if(window.localStorage.getItem('key')==null){
+        window.localStorage.setItem('key', 0);
+        counter = parseInt(window.localStorage.getItem('key'));
+        //document.getElementById("score").innerHTML = scores;
+       } else { counter = parseInt(window.localStorage.getItem('key'));
+              /*document.getElementById("score").innerHTML = scores;*/ }
+        //saving stages
+    if(window.localStorage.getItem('stageman')==null){
+        window.localStorage.setItem('stageman', 1);
+        stager = parseInt(window.localStorage.getItem('stageman'));
+        document.getElementById("stage").innerHTML = stager;
+       } else { stager = parseInt(window.localStorage.getItem('stageman'));
+              document.getElementById("stage").innerHTML = stager;}
+        //saving levels
+     if(window.localStorage.getItem('stages')==null){
+        window.localStorage.setItem('stages', 1);
+        levels = parseInt(window.localStorage.getItem('stages'));
+        document.getElementById("level").innerHTML = levels;
+       } else { levels = parseInt(window.localStorage.getItem('stages'));
+              document.getElementById("level").innerHTML = levels;}
+        //saving scores
+     if(window.localStorage.getItem('points')==null){
+        window.localStorage.setItem('points', 0);
+        scores = parseInt(window.localStorage.getItem('points'));
+        document.getElementById("score").innerHTML = scores;
+       } else { scores = parseInt(window.localStorage.getItem('points'));
+              document.getElementById("score").innerHTML = scores;}
+
+
     $('#images').attr("src",faces[counter].src);
     $('#images').attr("alt",faces[counter].title);
     splitNamesForButtons();
@@ -270,6 +305,9 @@ this is start of page
 */
 $(document).ready(
     function(){
+        $(".button-collapse").sideNav();
+        $('.collapsible').collapsible();
+        $('.materialboxed').materialbox();
         closevideo();
         toury();
         loading();
@@ -279,7 +317,8 @@ $(document).ready(
 
 function clicking(){
 $('#options input').click(function(e){
-    e.preventDefault()
+    e.preventDefault();
+    sounding();
     if($('.inputx:empty:first').text($(this).val()).length)
         //change to .hide()
         $(this).hide();
@@ -311,28 +350,8 @@ function helperMan(){
     document.getElementById("help").innerHTML = faces[counter].hint;
 }
 
-//controlling nav bar
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
 
 
-/* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */
-function openAccord(){
-    var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-        this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("show");
-    }
-}
-}
 //end of nav bar
 function linkers(){
    /* var clickers = document.createElement("BUTTON");        // Create a <button> element
@@ -375,7 +394,7 @@ function addStage(){
     switch(levels){
         case track:
             stager++;
-            track += 5;
+            track += 50;
             navigator.notification.alert("Welcome to stage " + stager, null, "9ja Mascots", "Continue");
           //  alert("Welcome to stage " + stager);
             document.getElementById("stage").innerHTML = stager;
@@ -391,8 +410,10 @@ function sounding(){
     var soundman = document.getElementById('switch1');
     if (soundman.checked) {
         audio.play();
-    }else{
+        setTimeout(function stopMusic(){
         audio.pause();
+        audio.currentTime = 0;
+        },200);
     }
 }
 //dark theme

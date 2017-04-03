@@ -167,10 +167,11 @@ html {
     margin-right: 8px;
     background-color: lightcyan;
     color:darkred;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: 600;
     border-radius: 10px;
     margin-top: 5px;
+      height: 40px;
 }
 #options  {
     margin-left: 7px;
@@ -295,6 +296,7 @@ button.accordion.active:after {
     font-weight: 200;
 }
 
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -348,6 +350,21 @@ button.accordion.active:after {
     #result, #help {font-size: 2em; font-weight: bold;margin-left: 27vw;}
 }
 
+@media screen and (min-width: 750px) and (min-height: 1000px){
+     #images {margin-left: 0vw; height:45vh; margin-right: -200px;}
+    #sociallinks {padding-top: 70px;padding-right: 40px;}
+    .inputx {height:60px;width:50px;font-size: 2.5em;margin-top:20px;}
+    #options {margin-left: 5vw;}
+    #options div {height:60px}
+    .entry {height: 50px;}
+    #hinter {margin-left: -110px;}
+    #help {margin-left: 10px;}
+    .side-nav{width:70vw;}
+    .side-nav .collapsible-header {height:2em;}
+    #switch1, #darktheme {zoom:2;}
+    h5 {font-size:1.5em}
+}
+
 .inputx {
     width:23px;
     margin-right: 5px;
@@ -369,7 +386,7 @@ button.accordion.active:after {
 
 /* The Modal (background) */
 #commenter  {
-    font-size: 1.4em;
+    font-size: 0.5em;
 }
 
 .close  {
@@ -382,11 +399,11 @@ button.accordion.active:after {
     display: none;
 }
 
-.modal {
+.modal-true {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 2; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 70px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -397,7 +414,7 @@ button.accordion.active:after {
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content-true {
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -413,12 +430,12 @@ button.accordion.active:after {
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
+    from {top:-250px; opacity:0}
     to {top:0; opacity:1}
 }
 
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
+    from {top:-250px; opacity:0}
     to {top:0; opacity:1}
 }
 
@@ -426,24 +443,26 @@ button.accordion.active:after {
 .close {
     color: green;
     float: right;
-    font-size: 28px;
+    font-size: 22px;
     font-weight: bold;
     background-color: white;
+    margin-top: 5px;
 }
 
 
-.modal-header {
+.modal-header-true {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body-true {padding: 2px 16px;}
 
-.modal-footer {
+.modal-footer-true {
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
+    height: 50px;
 }
 
 #faceslinks {
@@ -466,64 +485,15 @@ button.accordion.active:after {
     display: inline;
     margin-right: 5px;
     margin-bottom: 4px;
-}
-/* toggle buttons*/
-input.switch:empty
-{
-    /*display: none;*/
-	margin-left: -999px;
-}
-input.switch:empty ~ label
-{
-	position: relative;
-	float: left;
-	line-height: 1.4em;
-	text-indent: 4em;
-	margin: 0.2em 0;
-	-webkit-user-select: none;
-	user-select: none;
-}
-input.switch:empty ~ label:before,
-input.switch:empty ~ label:after
-{
-	position: absolute;
-	display: block;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	content: ' ';
-	width: 3.6em;
-	background-color: #c33;
-	border-radius: 0.3em;
-	box-shadow: inset 0 0.2em 0 rgba(0,0,0,0.3);
-	-webkit-transition: all 100ms ease-in;
-	transition: all 100ms ease-in;
+    line-height: 1.7em;
+    margin-top: 2px;
 }
 
-input.switch:empty ~ label:after
-{
-	width: 1.4em;
-	top: 0.1em;
-	bottom: 0.1em;
-	margin-left: 0.1em;
-	background-color: #fff;
-	border-radius: 0.15em;
-	box-shadow: inset 0 -0.2em 0 rgba(0,0,0,0.2);
-}
-input.switch:checked ~ label:before
-{
-	background-color: #393;
-}
-
-input.switch:checked ~ label:after
-{
-	margin-left: 2em;
-}
 /*the div that holds the social links*/
 #sociallinks {
     clear: right;
     float: right;
-    width:8vw;
+    width:16vw;
     padding-top: 40px;
     padding-right: 15px;
     z-index: 1;
