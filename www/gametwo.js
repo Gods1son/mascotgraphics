@@ -462,3 +462,42 @@ function toury(){
     // Start the tour!
     hopscotch.startTour(tour);
 }
+
+function startAfresh(){
+    var afresh = confirm("The game will start from the very beginning, are you sure you want to do this");
+    if(afresh){
+        //reset stage to 1
+        window.localStorage.setItem('stageman', 1);
+        stager = parseInt(window.localStorage.getItem('stageman'));
+        document.getElementById("stage").innerHTML = stager;
+
+        //reset counter to 1
+         window.localStorage.setItem('key', 0);
+        counter = parseInt(window.localStorage.getItem('key'));
+       // document.getElementById("stage").innerHTML = stager;
+
+        //reset levels to 1
+         window.localStorage.setItem('stages', 1);
+        levels = parseInt(window.localStorage.getItem('stages'));
+        document.getElementById("level").innerHTML = levels;
+
+        //reset scores to 1
+         window.localStorage.setItem('points', 0);
+        scores = parseInt(window.localStorage.getItem('points'));
+        document.getElementById("score").innerHTML = scores;
+
+        //reload the screen
+         $('#images').attr("src",faces[counter].src);
+        $('#images').attr("alt",faces[counter].title);
+
+       /* //add buttons again
+        splitNamesForButtons();
+
+        //add clickable buttons
+        putclickable();
+
+        //add hint
+        helperMan();*/
+        location.reload();
+    }
+}
