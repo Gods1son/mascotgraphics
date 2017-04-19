@@ -376,6 +376,7 @@ button.accordion.active:after {
     text-transform: uppercase;
     overflow: hidden;
 }
+
 #clickable  {
     clear:both;
     margin-top: 5px;
