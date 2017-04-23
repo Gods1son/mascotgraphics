@@ -279,13 +279,6 @@ clue:'dgumomxolehdoe',
 link:'https://en.wikipedia.org/wiki/Dele_Momodu'
 },
 {
-src:'images/delemomodu.jpg',
-title:'delemomodu',
-hint:'Oviation Magazine',
-clue:'dgumomxolehdoe',
-link:'https://en.wikipedia.org/wiki/Dele_Momodu'
-},
-{
 src:'images/agbani.jpg',
 title:'agbani',
 hint:'Miss World',
@@ -300,18 +293,11 @@ clue:'zxcvbhnmabafca',
 link:'https://en.wikipedia.org/wiki/Sani_Abacha'
 },
 {
-src:'images/MI.jpg',
-title:'MI',
+src:'images/mi.jpg',
+title:'mi',
 hint:'Mr. Incredible',
 clue:'zxcvihnmabafca',
 link:'https://en.wikipedia.org/wiki/M.I'
-},
-{
-src:'images/denrele.jpg',
-title:'denrele',
-hint:'Channel O',
-clue:'ghedndlxergbme',
-link:'https://en.wikipedia.org/wiki/Denrele_Edun'
 },
 {
 src:'images/denrele.jpg',
@@ -447,13 +433,6 @@ clue:'omyinboeefezrp',
 link:'https://en.wikipedia.org/wiki/Freeze_(media_personality)'
 },
 {
-src:'images/freeze.jpg',
-title:'freeze',
-hint:'Cool FM',
-clue:'omyinboeefezrp',
-link:'https://en.wikipedia.org/wiki/Freeze_(media_personality)'
-},
-{
 src:'images/kelani.jpg',
 title:'kelani',
 hint:'Mainframe',
@@ -489,10 +468,10 @@ clue:'bozzyjaondpqah',
 link:'https://en.wikipedia.org/wiki/Don_Jazzy'
 },
 {
-src:'images/onasode.jpg',
+src:'images/onosode.jpg',
 title:'onosode',
 hint:'Technocrat',
-clue:'hunakssodeonai',
+clue:'hunaossodeonai',
 link:'https://en.wikipedia.org/wiki/Gamaliel_Onosode'
 },
 {
@@ -597,7 +576,7 @@ link:'http://kelechiamadiobi.com/about-us/'
 src:'images/2face.jpg',
 title:'2face',
 hint:'Hypertech',
-clue:'qpltub2abafcea',
+clue:'qpltub2ebafcea',
 link:'https://en.wikipedia.org/wiki/2Baba'
 },
 {
@@ -660,7 +639,7 @@ link:'http://naijagists.com/harry-ayoade-akande-biography/'
 src:'images/obahiagbon.jpg',
 title:'obahiagbon',
 hint:'Kinkum Kankrum',
-clue:'chwgbonhiabaoq',
+clue:'ohwgbonhiabaon',
 link:'http://www.nairaland.com/408901/why-speak-big-grammar-hon'
 },
 {
@@ -692,8 +671,8 @@ clue:'dakokriasakmnz',
 link:'https://en.wikipedia.org/wiki/Mujahid_Dokubo-Asari'
 },
 {
-src:'images/IBB.jpg',
-title:'IBB',
+src:'images/ibb.jpg',
+title:'ibb',
 hint:'Maradona',
 clue:'azwushonekabbi',
 link:'https://en.wikipedia.org/wiki/Ibrahim_Babangida'
@@ -797,8 +776,8 @@ clue:'competnaasegap',
 link:'https://en.wikipedia.org/wiki/Beauty_pageant'
 },
 {
-src:'images/Nollywood.jpg',
-title:'Nollywood',
+src:'images/nollywood.jpg',
+title:'nollywood',
 hint:'Film Industry',
 clue:'actreoodywloln',
 link:'https://en.wikipedia.org/wiki/Nollywood'
@@ -1000,13 +979,6 @@ clue:'heakodoftebsta',
 link:'https://en.wikipedia.org/wiki/List_of_heads_of_state_and_Presidents_of_Nigeria'
 },
 {
-src:'images/headofstate.jpg',
-title:'headofstate',
-hint:'Term of Office',
-clue:'heakodoftebsta',
-link:'https://en.wikipedia.org/wiki/List_of_heads_of_state_and_Presidents_of_Nigeria'
-},
-{
 src:'images/jos.jpg',
 title:'jos',
 hint:'Place of Birth',
@@ -1086,9 +1058,9 @@ var stager = 1;
 //track is used to track stages
 var track = 50;
 //array that throws jab when u get it wrong
-var abuse = ["Are you really a Nigerian?","Show me your green passport!","Its like you are hungry!","Maybe ask a friend?","So, you dont know me!","Abeg Abeg Abeg!","You say wetin?","Please go back to Togo!","Are you serious?","Really? Really?????","I’m beginning to doubt your nationality","Oya come dey go abeg","Please go find chair sitdon.","Wake up pls","You don chop?","Haba!!","Loooool","Oga OO","No fall my hand o","Oya try again…Smh.","Chaaaiii","Maybe go and eat first? Ehn?","I am tired of you. Really.","Is Okay. Is Okay. Is Okay.","Take a break and come back please!","You wish eh!!!"];
+var abuse = ["Are you really a Nigerian?","Show me your green passport!","Its like you are hungry!","Maybe ask a friend?","So, you dont know me!","Abeg Abeg Abeg!","You say wetin?","Please go back to Togo!","Are you serious?","Really? Really?????","I am beginning to doubt your nationality","Oya come dey go abeg","Please go find chair sitdon.","Wake up pls","You don chop?","Haba!!","Loooool","Oga OO","No fall my hand o","Oya try again…Smh.","Chaaaiii","Maybe go and eat first? Ehn?","I am tired of you. Really.","Is Okay. Is Okay. Is Okay.","Take a break and come back please!","You wish eh!!!"];
 //array that informs them that they passed
-var correctG = ["Your head is there!","You are too much!","Let’s go there!!","Thats what I am talking about","You too much","You are a true Nigerian","A standing ovation for you","Chop knuckle there!","Twale !!!!!!!!!!!!!","Two hands in the air for you","Proud of you!","Correct!","100% Nigerian!","You deserve an award","Respect!","I dash you your phone!","Three Gbosa for you!","I doff my cap for you","I owe you two hundred naira!","Naija person to the core!!"];
+var correctG = ["Your head is there!","You are too much!","Let us go there!!","Thats what I am talking about","You too much","You are a true Nigerian","A standing ovation for you","Chop knuckle there!","Twale !!!!!!!!!!!!!","Two hands in the air for you","Proud of you!","Correct!","100% Nigerian!","You deserve an award","Respect!","I dash you your phone!","Three Gbosa for you!","I doff my cap for you","I owe you two hundred naira!","Naija person to the core!!"];
 
 //putting the clickable buttons below pix
 function putclickable(){
@@ -1379,6 +1351,7 @@ function addStage(){
         case track:
             stager++;
             track += 50;
+            //REMEMBER TO REMOVE COMMENT FROM BELOW
             navigator.notification.alert("Welcome to stage " + stager, null, "9ja Mascots", "Continue");
           //  alert("Welcome to stage " + stager);
             document.getElementById("stage").innerHTML = stager;
