@@ -329,7 +329,7 @@ link:'https://en.wikipedia.org/wiki/Obafemi_Awolowo'
 },
 {
 src:'images/adebayo.jpg',
-title:'Adebayo',
+title:'adebayo',
 hint:'Orange Culture',
 clue:'ryubmobfqadeap',
 link:'http://lagosfashionanddesignweek.com/w/designer-profile-how-adebayo-oke-lawal-is-redefining-what-menswear-looks-like/'
@@ -638,7 +638,7 @@ link:'http://naijagists.com/harry-ayoade-akande-biography/'
 {
 src:'images/obahiagbon.jpg',
 title:'obahiagbon',
-hint:'Kinkum Kankrum',
+hint:'Krinkum Krankrum',
 clue:'ohwgbonhiabaon',
 link:'http://www.nairaland.com/408901/why-speak-big-grammar-hon'
 },
@@ -1234,7 +1234,8 @@ function loading(){
     splitNamesForButtons();
     putclickable();
     clicking();
-    var modal = document.getElementById('myModal');
+
+    /*   var modal = document.getElementById('myModal');
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
 
@@ -1249,7 +1250,7 @@ function loading(){
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
     modal.style.display = "none";
-        }
+        }*/
     }
 
 /*
@@ -1266,6 +1267,7 @@ $(document).ready(
         toury();
         loading();
 })
+
 //code for game start
 //jQuery for clickable
 
@@ -1310,30 +1312,16 @@ function helperMan(){
 
 //end of nav bar
 function linkers(){
-   /* var clickers = document.createElement("BUTTON");        // Create a <button> element
-    $('#faceslinks button').addClass("linking");
-    var t = document.createTextNode(faces[(counter - 1)].title);       // Create a text node
-    clickers.appendChild(t);                               // Append the text to <button>
-    document.getElementById("faceslinks").appendChild(clickers);
-    clickers.onclick = function(){
-        window.open(faces[(counter -1)].link, '_blank', 'location=yes');
-    };*/
-
 // create the element
     var newLink = document.createElement("a");
     // add the URL attribute
     newLink.setAttribute("href", faces[(counter -1)].link);
-  //  newLink.setAttribute("target", "_window");
-  //  newLink.setAttribute("location", "yes");
+
     // Add some text
     newText = document.createTextNode(faces[(counter - 1)].title);
     // Add it to the new hyperlink
     newLink.appendChild(newText);
-    // Find the place to put it
-   // document.getElementById("faceslinkss").appendChild(newLink);
-  /*$("faceslinkss a").on("click", {url: lastLink}, function(url){
-       window.open(url);
-  })*/
+
     clickers = document.createElement("BUTTON");
     var t = document.createTextNode(faces[(counter - 1)].title);       // Create a text node
     clickers.appendChild(t);
@@ -1447,14 +1435,6 @@ function startAfresh(){
          $('#images').attr("src",faces[counter].src);
         $('#images').attr("alt",faces[counter].title);
 
-       /* //add buttons again
-        splitNamesForButtons();
-
-        //add clickable buttons
-        putclickable();
-
-        //add hint
-        helperMan();*/
         location.reload();
     }
 }
