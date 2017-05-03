@@ -1235,7 +1235,7 @@ function loading(){
     putclickable();
     clicking();
 
-    /*   var modal = document.getElementById('myModal');
+      var modal = document.getElementById('myModal');
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
 
@@ -1250,7 +1250,7 @@ function loading(){
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
     modal.style.display = "none";
-        }*/
+        }
     }
 
 /*
